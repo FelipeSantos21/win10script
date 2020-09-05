@@ -1,30 +1,40 @@
 # win10script
-This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine.
+Esse é um script que reutiliza os scripts de debloat e gists do github. Também foi adicionado o Chocolatey e outras ferramentas que são comuns na maioria dos computadores.
 
-## My Additions
+Esse é o comando que vai rodar todo o código (baixa desse repositório e executa)
+```
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUmad')"
+```
+
+## Adições
 
 - Dark Mode
-- One Command to launch and run
+- Um comando para rodar o script
 - Chocolatey Install
 - O&O Shutup10 CFG and Run
-- Added Install Programs
-- Added Debloat Microsoft Store Apps
+- Adicionado Instalação de programas
+- Adicionado Debloat Microsoft da Store Apps
 
-## Modifications
-I encourage people to fork this project and comment out things they don't like! Here is a list of normal things people change:
-- Uninstalling OneDrive (This is on in my script)
-- Installing Adobe, Chocolatey, Notepad++, MPC-HC, and 7-Zip
+## Modificações
+É encorajado que dê um fork nesse projeto e comente as funções de forma que melhor se adapte para você! Seguem exemplos de modificações:
+- Desinstalar o OneDrive (Está no script)
+- Instalar o Adobe, Chocolatey, Notepad++, MPC-HC, and 7-Zip
 
-Comment any thing you don't want out... Example:
+Comente tudo o que você não quer... Exemplo:
 
 ```
 ########## NOTE THE # SIGNS! These disable lines This example shows UACLow being set and Disabling SMB1
+########## Preste atenção no #  ele que vai comentar e desabilitar as funções, bem como retirá-lo vai ativar as funções.
+
+Aqui mostra habilitando o UACLow e desabilitando o SMB1.
+
+########## Valores originais:
 ### Security Tweaks ###
 	"SetUACLow",                  # "SetUACHigh",
 	"DisableSMB1",                # "EnableSMB1",
 
-########## NOW LETS SWAP THESE VALUES AND ENABLE SMB1 and Set UAC to HIGH
+########## Valores Corrigidos
 ### Security Tweaks ###
-	"SetUACHigh",
-	"EnableSMB1",
+	"SetUACHigh",                  # "SetUACLow",
+	"EnableSMB1",                  # "DisableSMB1"
 ```
