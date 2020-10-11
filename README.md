@@ -3,10 +3,13 @@ Esse é um script que reutiliza os scripts de debloat e gists do github. Também
 
 Ele foi copiado e adaptado do site: https://christitus.com/debloat-windows-10-2020/
 
-Esse é o comando que vai rodar todo o código (baixa desse repositório e executa)
+Esse é o comando que vai rodar todo o código (baixa desse repositório e executa), para executar, basta colar o código no PowerShell
 ```
 powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUmad')"
 ```
+
+Caso seu antivirus bloqueie o código, baixe o arquivo "win10debloat.ps1" desse repositóri e o execute
+
 
 ## Adições
 
