@@ -1,6 +1,8 @@
 # win10script
 Esse é um script que reutiliza os scripts de debloat e gists do github. Também foi adicionado o Chocolatey e outras ferramentas que são comuns na maioria dos computadores.
 
+Ele foi copiado e adaptado do site: https://christitus.com/debloat-windows-10-2020/
+
 Esse é o comando que vai rodar todo o código (baixa desse repositório e executa)
 ```
 powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUmad')"
